@@ -438,6 +438,9 @@ body {
   .sidebar {
     max-width: 210px;
   }
+  .collapsed_sidebar .sidebar:hover {
+    max-width: 210px;
+  }
   .sidebar .menu_list .menu_item a {
     font-size: 14px;
   }
