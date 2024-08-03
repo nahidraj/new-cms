@@ -471,7 +471,7 @@ body {
     height: 20px;
   }
 }
-@media (max-width: 992.98px) {
+@media (max-width: 991.98px) {
   .sidebar {
     padding: 12px;
     max-width: 70px;
@@ -641,7 +641,8 @@ body {
 }
 .footer_area p {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 22px;
 }
 .footer_area p a {
   color: #DA511F;
