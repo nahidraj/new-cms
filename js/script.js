@@ -13,6 +13,39 @@ $(function () {
     }
   });
 
+  // full page loader js
+  $(".fullpage_loader").fadeOut("slow", function () {
+    $(this).remove();
+  });
+
+  // component loader js
+  $(".component_loader").fadeOut("slow", function () {
+    $(this).remove();
+  });
+
+  // dropdown menu js
+  $(document).ready(function () {
+    // Toggle dropdown menu on button click
+    $(".dropdown_menu").on("click", function (e) {
+      e.stopPropagation(); // Prevent the click event from bubbling up to the document
+      var $menu = $(this).next(".dropdown_menu_info");
+      $(".dropdown_menu_info").not($menu).removeClass("control_dropdown_menu");
+      $menu.toggleClass("control_dropdown_menu");
+    });
+
+    // Close dropdown menu when clicking outside of it
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest('.dropdown_menu_info').length) {
+        $(".dropdown_menu_info").removeClass("control_dropdown_menu");
+      }
+    });
+
+    // Prevent dropdown menu from closing when clicking inside it
+    $(".dropdown_menu_info").on("click", function (e) {
+      e.stopPropagation(); // Prevent the click event from bubbling up to the document
+    });
+  });
+
   // sidebar collapsed menu js
   // Check the saved state in localStorage and apply it
   if (localStorage.getItem("sidebarState") === "collapsed") {
@@ -20,19 +53,19 @@ $(function () {
   }
 
   // Toggle sidebar state and save it in localStorage
-if (localStorage.getItem("sidebarState") === "collapsed") {
-  $("body").addClass("collapsed_sidebar");
-}
-
-// Toggle sidebar state and save it in localStorage
-$(".sidebar_control_btn, .close_mobile_sidebar").on("click", function () {
-  $("body").toggleClass("collapsed_sidebar");
-  if ($("body").hasClass("collapsed_sidebar")) {
-    localStorage.setItem("sidebarState", "collapsed");
-  } else {
-    localStorage.removeItem("sidebarState");
+  if (localStorage.getItem("sidebarState") === "collapsed") {
+    $("body").addClass("collapsed_sidebar");
   }
-});
+
+  // Toggle sidebar state and save it in localStorage
+  $(".sidebar_control_btn, .close_mobile_sidebar").on("click", function () {
+    $("body").toggleClass("collapsed_sidebar");
+    if ($("body").hasClass("collapsed_sidebar")) {
+      localStorage.setItem("sidebarState", "collapsed");
+    } else {
+      localStorage.removeItem("sidebarState");
+    }
+  });
 
 
 

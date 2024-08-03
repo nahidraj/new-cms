@@ -15,7 +15,10 @@
 
 
 <body>
-
+  <!-- full page loading -->
+  <div class="fullpage_loader">
+    <div class="loader"></div>
+  </div>
   <!-- main area start -->
   <main class="nsl_cms">
     <aside class="sidebar position-fixed top-0 start-0 h-100 w-100">
@@ -468,8 +471,8 @@
                 <p>08:30 AM - 29 July, 2024</p>
               </div>
               <div class="action_info d-flex gap-4 align-items-center">
-                <div class="icon_box me-2">
-                  <button class="icon_btn bg-transparent border-0 position-relative">
+                <div class="icon_box position-relative">
+                  <button class="icon_btn dropdown_menu bg-transparent border-0 position-relative">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
@@ -480,9 +483,105 @@
                     <sup
                       class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">5</sup>
                   </button>
+                  <div
+                    class="information_box dropdown_menu_info notification_information position-absolute top-100 end-0">
+                    <div class="top d-flex justify-content-between align-items-center gap-4">
+                      <h3 class="title">Notification</h3>
+                      <button class="clear bg-transparent border-0">Clear</button>
+                    </div>
+                    <div class="list">
+                      <!-- <h4 class="no_list">
+                        <div><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alarm-minus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M7 4l-2.75 2" /><path d="M17 4l2.75 2" /><path d="M10 13h4" /></svg></div>
+                        No Notification Found
+                      </h4> -->
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img warning">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 9v4" />
+                                <path
+                                  d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+                                <path d="M12 16h.01" /></svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" /></svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btm text-center">
+                      <button class="view w-100">View All</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="icon_box me-2">
-                  <button class="icon_btn bg-transparent border-0 position-relative">
+                <div class="icon_box position-relative ">
+                  <button class="icon_btn dropdown_menu bg-transparent border-0 position-relative">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="icon icon-tabler icons-tabler-outline icon-tabler-message">
@@ -495,19 +594,272 @@
                     <sup
                       class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">2</sup>
                   </button>
+                  <div class="information_box dropdown_menu_info messages_information position-absolute top-100 end-0">
+                    <div class="top d-flex justify-content-between align-items-center gap-4">
+                      <h3 class="title">Messages</h3>
+                      <button class="clear bg-transparent border-0">Clear</button>
+                    </div>
+                    <div class="list">
+                      <ul class="list-unstyled">
+                        <!-- <h4 class="no_list">
+                          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-messenger">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                              <path d="M8 13l3 -2l2 2l3 -2" /></svg></div>
+                          No Messages Found
+                        </h4> -->
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btm text-center">
+                      <button class="view w-100">View All</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="user_box">
-                  <button class="user_image rounded-pill bg-transparent border-0 position-relative">
+                <div class="user_box position-relative">
+                  <button class="user_image dropdown_menu rounded-pill bg-transparent border-0 position-relative">
                     <img class="rounded-pill w-100 h-100 object-fit-cover" src="images/profile-user.png"
                       alt="profile-user">
                   </button>
+                  <div class="user_information position-absolute dropdown_menu_info">
+                    <div class="edit_image text-center">
+                      <div class="image position-relative">
+                        <img src="images/profile-edit.png" alt="profile-edit">
+                        <div class="edit_input">
+                          <label for="file">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                              <path d="M13.5 6.5l4 4" /></svg>
+                          </label>
+                          <input type="file" id="file" class="d-none">
+                        </div>
+                      </div>
+                      <div class="name text-center">
+                        <h4 class="nm">Nogor Solutions Limited</h4>
+                        <a href="#" class="edit">Edit Your Profile</a>
+                      </div>
+                      <div class="menus text-start">
+                        <ul class="list-unstyled">
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-contrast-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                                <path d="M3 19h2.25c3.728 0 6.75 -3.134 6.75 -7s3.022 -7 6.75 -7h2.25" /></svg>
+                              User Role
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-settings-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+                              Site Settings
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-topology-full-hierarchy">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M8 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M8 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M20 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M14 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M6 8v8" />
+                                <path d="M18 16v-8" />
+                                <path d="M8 6h8" />
+                                <path d="M16 18h-8" />
+                                <path d="M7.5 7.5l3 3" />
+                                <path d="M13.5 13.5l3 3" />
+                                <path d="M16.5 7.5l-3 3" />
+                                <path d="M10.5 13.5l-3 3" /></svg>
+                              Activity Log
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M9 12h12l-3 -3" />
+                                <path d="M18 15l3 -3" /></svg>
+                              Log Out
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div class="content_body">
+      <div class="content_body position-relative">
+        <!-- <div class="component_loader">
+          <div class="loader"></div>
+        </div> -->
         <div class="row g-3">
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="card">
