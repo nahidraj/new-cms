@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   z-index: 999;
+  transition: $transition;
 
   .logo {
     padding: 14px;

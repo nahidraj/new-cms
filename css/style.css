@@ -257,6 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 999;
+  transition: all 0.3s ease-out 0s;
 }
 .sidebar .logo {
   padding: 14px;
@@ -547,6 +548,7 @@ body {
   padding: 14px;
   padding-top: 10px;
   padding-left: 254px;
+  transition: all 0.3s ease-out 0s;
 }
 .right_content .content_body {
   display: flex;
