@@ -664,6 +664,12 @@ body {
   align-items: center;
   color: #ffffff;
 }
+.sidebar .log_out .logout_btn .sign svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 2px;
+}
 .sidebar .log_out2 {
   margin-top: auto;
   display: flex;
