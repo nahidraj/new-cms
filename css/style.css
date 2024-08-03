@@ -933,6 +933,11 @@ body {
   border: 1px solid #E1E3E1;
   border-radius: 10px;
 }
+.card .cart_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
 
 .top_short_info {
   padding: 15px 10px;
