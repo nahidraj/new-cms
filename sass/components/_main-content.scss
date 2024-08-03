@@ -1,0 +1,22 @@
+.right_content {
+  padding: 14px;
+  padding-top: 10px;
+  padding-left: 254px;
+
+  .content_body {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 74px);
+    background-color: $white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 14px;
+  }
+}
+
+// responsive css
+@media (max-width:1399.98px) {
+  .right_content {
+    padding-left: 225px;
+  }
+}

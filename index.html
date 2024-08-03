@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="CMS">
+  <link rel="shortcut icon" href="images/Fevicon.png" type="image/x-icon">
+  <!--all css link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+  <!-- main area start -->
+  <main class="nsl_cms">
+    <aside class="sidebar position-fixed top-0 start-0 h-100 w-100">
+      <div class="logo">
+        <a href="index.html"><img width="140" src="images/logo.png" alt="logo"></a>
+      </div>
+      <div class="menu_list">
+        <ul class="list-unstyled">
+          <li class="menu_item active">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                  <path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+                  <path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                  <path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+              </div>
+              <div class="menu_name">
+                Dashboard
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">5</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Default">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-a-b-2">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M16 21h3c.81 0 1.48 -.67 1.48 -1.48l.02 -.02c0 -.82 -.69 -1.5 -1.5 -1.5h-3v3z" />
+                  <path d="M16 15h2.5c.84 -.01 1.5 .66 1.5 1.5s-.66 1.5 -1.5 1.5h-2.5v-3z" />
+                  <path d="M4 9v-4c0 -1.036 .895 -2 2 -2s2 .964 2 2v4" />
+                  <path d="M2.99 11.98a9 9 0 0 0 9 9m9 -9a9 9 0 0 0 -9 -9" />
+                  <path d="M8 7h-4" /></svg>
+              </div>
+              <div class="menu_name">
+                Default
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Analytic">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-heart">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                  <path d="M6 4v4" />
+                  <path d="M6 12v8" />
+                  <path d="M12 4v8.5" />
+                  <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                  <path d="M18 4v1" />
+                  <path d="M18 9v2.5" />
+                  <path
+                    d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+                </svg>
+              </div>
+              <div class="menu_name">
+                Analytic
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">14</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sales">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-affiliate">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275" />
+                  <path d="M11.683 12.317l5.759 -5.759" />
+                  <path d="M5.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M18.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M18.5 18.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M8.5 15.5m-4.5 0a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Sales
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dropdown Menu">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-ad-circle-off">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4.91 4.949a9.968 9.968 0 0 0 -2.91 7.051c0 5.523 4.477 10 10 10a9.968 9.968 0 0 0 7.05 -2.909" />
+                  <path
+                    d="M20.778 16.793a9.955 9.955 0 0 0 1.222 -4.793c0 -5.523 -4.477 -10 -10 -10c-1.74 0 -3.376 .444 -4.8 1.225" />
+                  <path d="M7 15v-4.5a1.5 1.5 0 0 1 2.138 -1.358" />
+                  <path d="M9.854 9.853c.094 .196 .146 .415 .146 .647v4.5" />
+                  <path d="M7 13h3" />
+                  <path d="M14 14v1h1" />
+                  <path d="M17 13v-2a2 2 0 0 0 -2 -2h-1v1" />
+                  <path d="M3 3l18 18" /></svg>
+              </div>
+              <div class="menu_name">
+                Dropdown Menu
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">5</div>
+                <div class="arrow_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg>
+                </div>
+              </div>
+            </a>
+            <ul class="list-unstyled sub_menu">
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Fiber Optic Cable">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Dropdown Menu 2
+                  </div>
+                  <div class="menu_info">
+                    <div class="arrow_icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 9l6 6l6 -6" /></svg>
+                    </div>
+                  </div>
+                </a>
+                <ul class="list-unstyled sub_menu">
+                  <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                      data-bs-title="If the menu name is long">
+                      <div class="menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M5 12l14 0" /></svg>
+                      </div>
+                      <div class="menu_name">
+                        If the menu name is long
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Lithium Battery">
+                      <div class="menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M5 12l14 0" /></svg>
+                      </div>
+                      <div class="menu_name">
+                        Menu level 3
+                      </div>
+                    </a></li>
+                </ul>
+              </li>
+              <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Lithium Battery">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Lithium Battery
+                  </div>
+                </a></li>
+              <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="LED Light">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    LED Light
+                  </div>
+                </a></li>
+            </ul>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Mail">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-air-balloon">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 19m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                  <path d="M12 16c3.314 0 6 -4.686 6 -8a6 6 0 1 0 -12 0c0 3.314 2.686 8 6 8z" />
+                  <path d="M12 9m-2 0a2 7 0 1 0 4 0a2 7 0 1 0 -4 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Mail
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Default">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-alphabet-arabic">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 6v4" />
+                  <path d="M13 14h8q -2.518 -3 -4 -3" />
+                  <path d="M13 6v9.958c0 .963 0 1.444 -.293 1.743s-.764 .299 -1.707 .299h-1" />
+                  <path d="M7 6v9.958c0 .963 0 1.444 -.293 1.743s-.764 .299 -1.707 .299h-1" /></svg>
+              </div>
+              <div class="menu_name">
+                Default
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Analytic">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-analyze">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M20 11a8.1 8.1 0 0 0 -6.986 -6.918a8.095 8.095 0 0 0 -8.019 3.918" />
+                  <path d="M4 13a8.1 8.1 0 0 0 15 3" />
+                  <path d="M19 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                  <path d="M5 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Analytic
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">23</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sales">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-anchor">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />
+                  <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Sales
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Mail">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-antenna-bars-5">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 18l0 -3" />
+                  <path d="M10 18l0 -6" />
+                  <path d="M14 18l0 -9" />
+                  <path d="M18 18l0 -12" /></svg>
+              </div>
+              <div class="menu_name">
+                Mail
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Chat">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                  <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                  <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                  <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" /></svg>
+              </div>
+              <div class="menu_name">
+                Chat
+              </div>
+              <div class="menu_info">
+                <div class="arrow_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg>
+                </div>
+              </div>
+            </a>
+            <ul class="list-unstyled sub_menu">
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+            </ul>
+          </li>
+          <li class="menu_item">
+            <a href="#">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-automation">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M13 20.693c-.905 .628 -2.36 .292 -2.675 -1.01a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.492 .362 1.716 2.219 .674 3.03" />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path d="M17 22l5 -3l-5 -3z" /></svg>
+              </div>
+              <div class="menu_name">
+                Calendar
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="log_out">
+        <a href="#" class="logout_btn">
+          <div class="text">
+            Log Out
+          </div>
+          <span class="sign">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+              <path d="M9 12h12l-3 -3" />
+              <path d="M18 15l3 -3" /></svg>
+          </span>
+        </a>
+      </div>
+      <div class="log_out2 d-none">
+        <a href="#" class="logout_btn2">
+          <span class="sign">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+              <path d="M9 12h12l-3 -3" />
+              <path d="M18 15l3 -3" /></svg>
+          </span>
+        </a>
+      </div>
+    </aside>
+    <div class="right_content">
+      <header class="header_area w-100">
+        <div class="row">
+          <div class="col-lg-4 align-self-center">
+            <div class="header_left">
+              <div class="main d-flex gap-2 align-items-center">
+                <div class="sidebar_control_bar">
+                  <button class="sidebar_control_btn border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M4 6h16" />
+                      <path d="M7 12h13" />
+                      <path d="M10 18h10" /></svg>
+                  </button>
+                </div>
+                <div class="logo2 d-none">
+                  <a href="index.html"><img width="120" src="images/logo.png" alt="logo"></a>
+                </div>
+                <!-- <div class="header_search w-100">
+                  <div class="input_groups position-relative w-100">
+                    <button class="bg-transparent border-0 position-absolute translate-middle-y top-50">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" /></svg>
+                    </button>
+                    <input class="rounded-5 w-100" type="text" placeholder="Search...">
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 align-self-center">
+            <div class="header_right d-flex align-items-center justify-content-end gap-4">
+              <div class="date_time position-relative">
+                <p>08:30 AM - 29 July, 2024</p>
+              </div>
+              <div class="action_info d-flex gap-4 align-items-center">
+                <div class="icon_box me-2">
+                  <button class="icon_btn bg-transparent border-0 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                      <path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                    <sup
+                      class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">5</sup>
+                  </button>
+                </div>
+                <div class="icon_box me-1">
+                  <button class="icon_btn bg-transparent border-0 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M8 9h8" />
+                      <path d="M8 13h6" />
+                      <path
+                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                    </svg>
+                    <sup
+                      class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">2</sup>
+                  </button>
+                </div>
+                <div class="icon_box">
+                  <button class="icon_btn bg-transparent border-0 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-settings">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                  </button>
+                </div>
+                <div class="user_box">
+                  <button class="user_image rounded-pill bg-transparent border-0 position-relative">
+                    <img class="rounded-pill w-100 h-100 object-fit-cover" src="images/profile-user.png"
+                      alt="profile-user">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content_body">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <a href="#" class="d-block w-100">
+                  <div class="top_short_info d-flex justify-content-between gap-4 align-items-center">
+                    <div class="text">
+                      <h4 class="label">Revenue</h4>
+                      <h3 class="title">$2,454</h3>
+                    </div>
+                    <div class="icon rounded-pill d-flex justify-content-center align-items-center">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sunrise"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" /><path d="M3 21l18 0" /><path d="M12 9v-6l3 3m-6 0l3 -3" /></svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <a href="#" class="d-block w-100">
+                  <div class="top_short_info d-flex justify-content-between gap-4 align-items-center">
+                    <div class="text">
+                      <h4 class="label">Sales</h4>
+                      <h3 class="title">$6,982</h3>
+                    </div>
+                    <div class="icon rounded-pill d-flex justify-content-center align-items-center">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-report-money"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" /><path d="M12 17v1m0 -8v1" /></svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <a href="#" class="d-block w-100">
+                  <div class="top_short_info d-flex justify-content-between gap-4 align-items-center">
+                    <div class="text">
+                      <h4 class="label">Costs</h4>
+                      <h3 class="title">$8,102</h3>
+                    </div>
+                    <div class="icon rounded-pill d-flex justify-content-center align-items-center">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cast"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19l.01 0" /><path d="M7 19a4 4 0 0 0 -4 -4" /><path d="M11 19a8 8 0 0 0 -8 -8" /><path d="M15 19h3a3 3 0 0 0 3 -3v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -2.8 2" /></svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer_area text-center">
+          <p>Copyright © 2024 <a href="#">Nogor Solutions Limited.</a> All Rights Reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <!-- main area end -->
+
+
+  <!-- all js link -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

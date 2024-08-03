@@ -1,0 +1,63 @@
+.top_short_info {
+  padding: 15px 10px;
+
+  .text {
+    .label {
+      @include font(16px, 500);
+      color: $black;
+      margin-bottom: 13px
+    }
+
+    .title {
+      @include font(34px, 700);
+      color: $black;
+    }
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    background-color: #D3E3FD;
+
+    svg {
+      transition: $transition;
+      width: 40px;
+      height: 40px;
+      color: $black;
+    }
+  }
+
+  &:hover {
+    .icon {
+      svg {
+        transform: rotateY(380deg);
+      }
+    }
+  }
+}
+
+
+// responsive css
+@media (max-width:1399.98px) {
+  .top_short_info {
+    padding: 0;
+  }
+
+  .top_short_info .text .title {
+    font-size: 24px;
+  }
+
+  .top_short_info .text .label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .top_short_info .icon {
+    width: 60px;
+    height: 60px;
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
