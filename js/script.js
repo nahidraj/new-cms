@@ -23,6 +23,35 @@ $(function () {
     $(this).remove();
   });
 
+  // update date and time
+  function formatAMPM(date) {
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    return hours + ':' + minutes + ' ' + ampm;
+  }
+
+  function formatDate(date) {
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let day = date.getDate();
+    let monthIndex = date.getMonth();
+    let year = date.getFullYear();
+    return day + ' ' + monthNames[monthIndex] + ', ' + year;
+  }
+
+  function updateDateTime() {
+    const now = new Date();
+    const timeString = formatAMPM(now);
+    const dateString = formatDate(now);
+    document.getElementById('currentDateTime').innerText = timeString + ' - ' + dateString;
+  }
+
+  updateDateTime();
+  setInterval(updateDateTime, 60000); // Update every minute
+
   // dropdown menu js
   $(document).ready(function () {
     // Toggle dropdown menu on button click

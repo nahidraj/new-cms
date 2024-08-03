@@ -291,7 +291,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s ease-out 0s;
-  transform: scale(0.7);
+  transform: scale(0.6);
   transform-origin: top right;
   border-top: 3px solid #1A73E8;
   display: flex;
@@ -433,8 +433,9 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s ease-out 0s;
-  transform: scale(0.7);
+  transform: scale(0.6);
   transform-origin: top right;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .header_area .header_right .action_info .user_box .user_information .image {
   width: 80px;
@@ -523,10 +524,6 @@ body {
   .header_area .header_right .date_time p {
     font-size: 14px;
   }
-  .header_area .header_right .action_info .icon_box .icon_btn svg {
-    width: 20px;
-    height: 20px;
-  }
   .header_area .header_right .action_info .icon_box .icon_btn .notification_number {
     width: 16px;
     height: 16px;
@@ -541,6 +538,14 @@ body {
   }
   .header_area .header_right .date_time {
     display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .messages_information {
+    margin-right: -46px;
+  }
+  .notification_information {
+    margin-right: -106px;
   }
 }
 .sidebar {
