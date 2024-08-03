@@ -20,14 +20,21 @@ $(function () {
   }
 
   // Toggle sidebar state and save it in localStorage
-  $(".sidebar_control_btn").on("click", function () {
-    $("body").toggleClass("collapsed_sidebar");
-    if ($("body").hasClass("collapsed_sidebar")) {
-      localStorage.setItem("sidebarState", "collapsed");
-    } else {
-      localStorage.removeItem("sidebarState");
-    }
-  });
+// Check the saved state in localStorage and apply it
+if (localStorage.getItem("sidebarState") === "collapsed") {
+  $("body").addClass("collapsed_sidebar");
+}
+
+// Toggle sidebar state and save it in localStorage
+$(".sidebar_control_btn, .close_mobile_sidebar").on("click", function () {
+  $("body").toggleClass("collapsed_sidebar");
+  if ($("body").hasClass("collapsed_sidebar")) {
+    localStorage.setItem("sidebarState", "collapsed");
+  } else {
+    localStorage.removeItem("sidebarState");
+  }
+});
+
 
 
   // Initialize tooltips

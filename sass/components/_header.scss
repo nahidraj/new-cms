@@ -121,3 +121,18 @@
     font-size: 10px;
   }
 }
+
+@media (max-width:991.98px) {
+
+  .header_area {
+    .logo2 {
+      a {
+        display: none !important;
+      }
+    }
+  }
+
+  .header_area .header_right .date_time {
+    display: none;
+  }
+}
