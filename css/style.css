@@ -58,7 +58,7 @@ body {
 }
 
 .row {
-  --bs-gutter-x: 18px;
+  --bs-gutter-x: 16px;
 }
 
 .mt-30 {
@@ -471,6 +471,77 @@ body {
     height: 20px;
   }
 }
+@media (max-width: 992.98px) {
+  .sidebar {
+    padding: 12px;
+    max-width: 70px;
+    padding-right: 12px !important;
+  }
+  .sidebar .sub_menu {
+    position: absolute;
+    visibility: hidden;
+  }
+  .sidebar .log_out {
+    display: none;
+  }
+  .sidebar .log_out2 {
+    display: flex !important;
+  }
+  .sidebar .logo {
+    display: none;
+  }
+  .sidebar .menu_name {
+    display: none !important;
+  }
+  .sidebar .menu_info {
+    display: none !important;
+  }
+  .sidebar .menu_list .menu_item a {
+    border-radius: 5px !important;
+    padding-left: 15px;
+  }
+  .sidebar:hover {
+    max-width: 240px;
+    background-color: #ffffff;
+    padding: 0;
+    border-right: 1px solid #ddd;
+  }
+  .sidebar:hover .logo {
+    display: block;
+  }
+  .sidebar:hover .menu_name {
+    display: -webkit-box !important;
+  }
+  .sidebar:hover .menu_info {
+    display: flex !important;
+  }
+  .sidebar:hover .menu_list .menu_item a {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+  }
+  .sidebar:hover .sub_menu {
+    position: static;
+    visibility: visible;
+  }
+  .sidebar:hover .log_out {
+    display: flex !important;
+  }
+  .sidebar:hover .log_out2 {
+    display: none !important;
+  }
+  .right_content {
+    padding-left: 72px !important;
+  }
+  .header_area .logo2 {
+    display: block !important;
+  }
+  .sidebar_control_bar {
+    display: none;
+  }
+  .header_area .header_right .date_time {
+    display: none;
+  }
+}
 .right_content {
   padding: 14px;
   padding-top: 10px;
@@ -527,6 +598,22 @@ body {
   transform: rotateY(380deg);
 }
 
+@media (min-width: 1400px) and (max-width: 1799.98px) {
+  .top_short_info .text .title {
+    font-size: 24px;
+  }
+  .top_short_info .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .top_short_info .icon svg {
+    width: 34px;
+    height: 34px;
+  }
+  .top_short_info {
+    padding: 8px 8px;
+  }
+}
 @media (max-width: 1399.98px) {
   .top_short_info {
     padding: 0;
