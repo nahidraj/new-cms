@@ -58,7 +58,7 @@ body {
 }
 
 .row {
-  --bs-gutter-x: 14px;
+  --bs-gutter-x: 18px;
 }
 
 .mt-30 {
@@ -361,6 +361,13 @@ body {
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  margin-left: 1px;
+}
+.sidebar .log_out2 .logout_btn2 .sign svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 2px;
 }
 
 .collapsed_sidebar .sidebar {
@@ -505,6 +512,7 @@ body {
   width: 80px;
   height: 80px;
   background-color: #D3E3FD;
+  flex: 0 0 auto;
 }
 .top_short_info .icon svg {
   transition: all 0.3s ease-out 0s;

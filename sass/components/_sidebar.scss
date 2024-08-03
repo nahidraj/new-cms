@@ -159,6 +159,14 @@
         justify-content: center;
         align-items: center;
         color: $white;
+        margin-left: 1px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+          position: relative;
+          left: 2px;
+        }
       }
     }
   }
@@ -287,8 +295,9 @@
   .sidebar .log_out .logout_btn {
     font-size: 14px;
   }
-  .sidebar .log_out .logout_btn .sign svg{
-   width: 20px;
-   height: 20px;
+
+  .sidebar .log_out .logout_btn .sign svg {
+    width: 20px;
+    height: 20px;
   }
 }
