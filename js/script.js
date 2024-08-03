@@ -20,7 +20,6 @@ $(function () {
   }
 
   // Toggle sidebar state and save it in localStorage
-// Check the saved state in localStorage and apply it
 if (localStorage.getItem("sidebarState") === "collapsed") {
   $("body").addClass("collapsed_sidebar");
 }

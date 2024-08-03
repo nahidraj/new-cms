@@ -17,6 +17,21 @@
         }
       }
     }
+    .mobile_sidebar_control_bar {
+      .sidebar_control_btn {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+
+        &:hover {
+          background-color: #EAF1FB;
+        }
+      }
+    }
 
     // .header_search {
     //   max-width: 600px;
