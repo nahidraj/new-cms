@@ -1,7 +1,20 @@
 .header_area {
   padding-bottom: 10px;
-  position: relative;
   z-index: 99;
+  position: sticky;
+  top: 14px;
+  background-color: #F6F8FC;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: -14px;
+    width: 102%;
+    height: 80px;
+    background-color: #F6F8FC;
+    content: "";
+    z-index: -1;
+  }
 
   .header_left {
     .sidebar_control_bar {
@@ -13,6 +26,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
+        position: relative;
+        z-index: 999;
 
         &:hover {
           background-color: #EAF1FB;
@@ -424,6 +439,7 @@
   .messages_information {
     margin-right: -46px;
   }
+
   .notification_information {
     margin-right: -106px;
   }

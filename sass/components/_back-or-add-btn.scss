@@ -1,0 +1,34 @@
+.back_or_add_btn{
+  background-color: $secondary;
+  border-radius: 50px;
+  color: $black;
+  @include font(14px, 500);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 6px 5px 17px;
+  &:hover{
+    background-color: $tertiary;
+    color: $white;
+    span{
+      background-color: $white;
+      color: $tertiary;
+    }
+  }
+  span{
+    margin-left: 9px;
+    width: 32px;
+    height: 32px;
+    background-color: $black;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

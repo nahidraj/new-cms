@@ -27,11 +27,13 @@ $(function () {
   function formatAMPM(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
     let ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0' + minutes : minutes;
-    return hours + ':' + minutes + ' ' + ampm;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    return hours + ':' + minutes + ':' + seconds + ' ' + ampm;
   }
 
   function formatDate(date) {
@@ -50,7 +52,7 @@ $(function () {
   }
 
   updateDateTime();
-  setInterval(updateDateTime, 60000); // Update every minute
+  setInterval(updateDateTime, 1000); // Update every second
 
   // dropdown menu js
   $(document).ready(function () {
@@ -103,65 +105,65 @@ $(function () {
   }));
 
 
-  const ctx = document.getElementById('myChart');
-  new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+  // const ctx = document.getElementById('myChart');
+  // new Chart(ctx, {
+  //   type: 'pie',
+  //   data: {
+  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  //     datasets: [{
+  //       label: '# of Votes',
+  //       data: [12, 19, 3, 5, 2, 3],
+  //       borderWidth: 1
+  //     }]
+  //   },
+  //   options: {
+  //     scales: {
+  //       y: {
+  //         beginAtZero: true
+  //       }
+  //     }
+  //   }
+  // });
 
-  const ctx1 = document.getElementById('myChart1');
-  new Chart(ctx1, {
-    type: 'pie',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+  // const ctx1 = document.getElementById('myChart1');
+  // new Chart(ctx1, {
+  //   type: 'pie',
+  //   data: {
+  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  //     datasets: [{
+  //       label: '# of Votes',
+  //       data: [12, 19, 3, 5, 2, 3],
+  //       borderWidth: 1
+  //     }]
+  //   },
+  //   options: {
+  //     scales: {
+  //       y: {
+  //         beginAtZero: true
+  //       }
+  //     }
+  //   }
+  // });
 
-  const ctx2 = document.getElementById('myChart3');
-  new Chart(ctx2, {
-    type: 'line',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+  // const ctx2 = document.getElementById('myChart3');
+  // new Chart(ctx2, {
+  //   type: 'line',
+  //   data: {
+  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  //     datasets: [{
+  //       label: '# of Votes',
+  //       data: [12, 19, 3, 5, 2, 3],
+  //       borderWidth: 1
+  //     }]
+  //   },
+  //   options: {
+  //     scales: {
+  //       y: {
+  //         beginAtZero: true
+  //       }
+  //     }
+  //   }
+  // });
 
   // back to top js
   var btn = $(".scroll-to-top");
@@ -204,7 +206,6 @@ $(function () {
 
     // Function to handle menu clicks
     $(".menu_item > a").on("click", function (e) {
-      e.preventDefault();
 
       // Close all sibling menus
       $(this).parent().siblings().find("ul").slideUp("100");
@@ -224,5 +225,6 @@ $(function () {
     });
   });
 
-
+  // chosen js
+  $(".chosen").chosen()
 });

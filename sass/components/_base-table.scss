@@ -1,0 +1,101 @@
+.table> :not(caption)>*>* {
+  padding: 0.4rem .8rem !important;
+}
+
+table {
+  margin-bottom: 0 !important;
+
+  thead {
+    border-top: 1px solid #E3E3E3;
+
+    th {
+      color: $black;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      vertical-align: middle;
+      cursor: pointer;
+
+      .heading {
+        position: relative;
+        display: inline-block;
+
+        img {
+          width: 14px;
+          position: absolute;
+          right: -20px;
+        }
+
+        .icon-up {
+          margin-top: -2px;
+        }
+
+        .icon-down {
+          position: absolute;
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  .check {
+    position: relative;
+    top: 0;
+
+  }
+
+  .form-check-input {
+    box-shadow: none !important;
+    cursor: pointer;
+
+
+    &:checked {
+      background-color: $tertiary;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        td {
+          background-color: #F2F6FC;
+        }
+      }
+    }
+
+    td {
+      vertical-align: middle;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      color: $black;
+      cursor: pointer;
+    }
+
+    .status {
+      @include font(12px, 500);
+      color: $white;
+      padding: 5px 14px;
+      border-radius: 40px;
+      min-width: 78px;
+    }
+
+    .pending {
+      background-color: #1A73E8;
+    }
+
+    .approved {
+      background-color: #188038;
+    }
+
+    .cancel {
+      background-color: #D93025;
+    }
+  }
+}
+
+@media (max-width:1799.98px) {
+  .table> :not(caption)>*>* {
+    padding: 0.4rem 1rem !important;
+  }
+}

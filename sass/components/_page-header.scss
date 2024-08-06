@@ -1,0 +1,6 @@
+.page_header {
+  margin-bottom: 14px;
+  .form_card_title {
+    @include font(18px, 500);
+  }
+}
