@@ -4,3 +4,8 @@
     @include font(18px, 500);
   }
 }
+.right_page_header{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}

@@ -1,0 +1,29 @@
+fieldset {
+  background-color: $white;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  padding: 14px;
+  position: relative;
+  height: 100%;
+
+  .legend {
+    position: absolute;
+    top: -17px;
+    left: 17px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $black;
+    border-radius: 40px;
+    background-color: $white;
+    padding: 5px 14px;
+    border: 1px solid #E3E3E3;
+  }
+
+  .table> :not(caption)>*>* {
+    padding: 0.5rem 1rem !important;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+}

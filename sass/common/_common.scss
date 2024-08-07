@@ -59,7 +59,6 @@ body {
   color: $white;
 }
 
-
 .theme_btn {
   color: $white;
   font-size: 15px;
@@ -80,6 +79,10 @@ body {
 
 .row {
   --bs-gutter-x: 16px;
+}
+
+.custom_row {
+  --bs-gutter-y: 30px;
 }
 
 .mt-30 {

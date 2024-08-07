@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   z-index: 999;
-  // transition: $transition;
+  transition: $transition;
+  border-right: 1px solid transparent;
 
   .logo {
     padding: 14px;
@@ -14,7 +15,7 @@
   .menu_list {
     overflow-y: auto;
     padding-bottom: 24px;
-    scrollbar-width: none;
+    scrollbar-width: thin;
 
     .menu_item {
       a {
@@ -219,7 +220,7 @@
       max-width: 240px;
       background-color: $white;
       padding: 0;
-      border-right: 1px solid #ddd;
+      border-color:  #ddd;
 
       .logo {
         display: block;
