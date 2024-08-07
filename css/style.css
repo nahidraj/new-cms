@@ -690,6 +690,7 @@ body {
   padding-left: 22px;
   border-radius: 50px;
   align-items: center;
+  white-space: nowrap;
 }
 .sidebar .log_out .logout_btn .sign {
   width: 38px;
