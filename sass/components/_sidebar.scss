@@ -131,7 +131,8 @@
       padding-left: 22px;
       border-radius: 50px;
       align-items: center;
-white-space: nowrap;
+      white-space: nowrap;
+
       .sign {
         width: 38px;
         height: 38px;
@@ -141,7 +142,8 @@ white-space: nowrap;
         justify-content: center;
         align-items: center;
         color: $white;
-        svg{
+
+        svg {
           width: 20px;
           height: 20px;
           position: relative;
@@ -220,7 +222,7 @@ white-space: nowrap;
       max-width: 240px;
       background-color: $white;
       padding: 0;
-      border-color:  #ddd;
+      border-color: #ddd;
 
       .logo {
         display: block;
