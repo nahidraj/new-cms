@@ -24,7 +24,6 @@
     .icon_error {
       color: #DC3545;
       margin-left: 5px;
-      cursor: pointer;
       position: relative;
       top: -1px;
 
@@ -81,20 +80,21 @@
 .form-control {
   box-shadow: none !important;
   height: 42px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   @include font(14px, 400);
   color: $black;
   border: 1px solid #E1E3E1;
 
   &:focus {
     border-color: $tertiary;
+    z-index: unset !important;
   }
 }
 
 .textarea-control {
   box-shadow: none !important;
   height: 42px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   @include font(14px, 400);
   color: $black;
   border: 1px solid #E1E3E1;
@@ -241,6 +241,7 @@
       font-weight: 700;
       padding: 4px 13px;
     }
+
     .deactive {
       border-radius: 40px;
       background: #DC3545;
@@ -248,6 +249,50 @@
       font-size: 12px;
       font-weight: 700;
       padding: 4px 13px;
+    }
+  }
+}
+
+.check_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 3px;
+
+  .form-check {
+    .form-check-input {
+      cursor: pointer;
+      position: relative;
+      top: -2px;
+      border: 1px solid $tertiary;
+    }
+
+    .form-check-label {
+      cursor: pointer;
+      @include font(14px, 400);
+    }
+  }
+}
+
+.radio_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 3px;
+
+  .form-check {
+    .form-check-input {
+      cursor: pointer;
+      position: relative;
+      top: -2px;
+      border: 1px solid $tertiary;
+    }
+
+    .form-check-label {
+      cursor: pointer;
+      @include font(14px, 400);
     }
   }
 }
@@ -316,6 +361,11 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      transition: $transition;
+
+      &:hover {
+        background-color: $black;
+      }
 
       svg {
         width: 20px;
@@ -381,5 +431,9 @@
 
   .image_upload_box p {
     font-size: 13px;
+  }
+  .form-label {
+    font-size: 13px;
+    margin-bottom: 6px;
   }
 }

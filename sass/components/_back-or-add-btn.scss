@@ -1,24 +1,32 @@
-.back_or_add_btn{
-  background-color: $secondary;
+.back_or_add_btn {
+  background-color: $tertiary;
+  color: $white;
   border-radius: 50px;
-  color: $black;
   @include font(14px, 500);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 6px 5px 17px;
-  &:hover{
-    background-color: $tertiary;
+  padding: 3px 17px 3px 3px;
+
+  span {
+    background-color: $white !important;
+    color: $black !important;
+  }
+
+  &:hover {
+    background-color: $black;
     color: $white;
-    span{
+
+    span {
       background-color: $white;
       color: $tertiary;
     }
   }
-  span{
-    margin-left: 9px;
-    width: 32px;
-    height: 32px;
+
+  span {
+    margin-right: 9px;
+    width: 30px;
+    height: 30px;
     background-color: $black;
     border-radius: 50%;
     color: $white;
@@ -26,7 +34,8 @@
     justify-content: center;
     align-items: center;
     transition: $transition;
-    svg{
+
+    svg {
       width: 20px;
       height: 20px;
     }

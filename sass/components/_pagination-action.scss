@@ -79,8 +79,8 @@
 
     li {
       a {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         background-color: transparent;
         border: 1px solid $tertiary;
         border-radius: 50%;
@@ -99,6 +99,11 @@
           width: 19px;
           height: 19px;
         }
+      }
+    }
+    .rest{
+      a{
+        border: 0;
       }
     }
 

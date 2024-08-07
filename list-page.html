@@ -866,7 +866,7 @@
           <div class="page_header d-flex align-items-center justify-content-between gap-4">
             <h4 class="form_card_title">List Page
             </h4>
-            <div class="header_base_search d-flex gap-3 align-items-center">
+            <div class="header_base_search d-none d-md-flex gap-3 align-items-center">
               <div class="input_select">
                 <select class="form-select form-select-lg shadow-none">
                   <option selected>Select</option>
@@ -885,7 +885,8 @@
                     <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                     <path d="M21 21l-6 -6" /></svg>
                 </button>
-                <button class="advance_filter">
+                <button class="advance_filter" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-bs-title="Advance search">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments">
@@ -900,24 +901,141 @@
                     <path d="M18 4v1" />
                     <path d="M18 9v11" /></svg>
                 </button>
+                <div class="advance_search_result">
+                  <form action="#">
+                    <div class="row g-3">
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Currency
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <select class="chosen">
+                              <option>--Select Currency--</option>
+                              <option>Taka</option>
+                              <option>USA Dollar</option>
+                              <option>USA Dollar</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Currency
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <select class="chosen">
+                              <option>--Select Currency--</option>
+                              <option>Taka</option>
+                              <option>USA Dollar</option>
+                              <option>USA Dollar</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-3 col-xl-4 col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                            <div class="lft">
+                              Company Name <sup class="text-danger">*</sup>
+                            </div>
+                          </label>
+                          <div class="input-group position-relative">
+                            <input type="text" class="form-control" placeholder="Enter your company name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" class="theme_btn rounded-2 w-100">Advance Search</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            <a href="#" class="back_or_add_btn">Add
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-corner-down-left-double">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M19 5v6a3 3 0 0 1 -3 3h-7" />
-                  <path d="M13 10l-4 4l4 4m-5 -8l-4 4l4 4" />
-                </svg>
-              </span>
-            </a>
+            <div class="right_page_header">
+              <a href="#" class="back_or_add_btn">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 5l0 14" />
+                    <path d="M5 12l14 0" /></svg>
+                </span>
+                Add
+              </a>
+            </div>
           </div>
           <!-- pagination and action btn -->
-          <div class="pagination_action">
+          <div class="pagination_action d-none d-md-block">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <div class="top_pagination d-flex gap-4 align-items-center">
                   <div class="pagination">
                     <p><span>1</span> - <span>100</span> of <span>500</span></p>
@@ -949,40 +1067,76 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="print_action text-end">
-                  <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Print">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-printer">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
-                      <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
-                      <path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" /></svg>
-                  </button>
-                  <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="Downdload Excel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-file-excel">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                      <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
-                      <path d="M10 12l4 5" />
-                      <path d="M10 17l4 -5" /></svg>
-                  </button>
-                  <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PDF">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                      <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
-                      <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
-                      <path d="M17 18h2" />
-                      <path d="M20 15h-3v6" />
-                      <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" /></svg>
-                  </button>
+              <div class="col-md-6">
+                <div class="d-flex gap-3 align-items-center justify-content-end">
+                  <div class="base_pagination mt-0 d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M15 6l-6 6l6 6" /></svg>
+                        </a>
+                      </li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li class="rest"><a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-dots">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                        </a></li>
+                      <li>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 6l6 6l-6 6" /></svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="print_action text-end">
+                    <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Print">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-printer">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+                        <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+                        <path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" /></svg>
+                    </button>
+                    <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-title="Downdload Excel">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-file-excel">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+                        <path d="M10 12l4 5" />
+                        <path d="M10 17l4 -5" /></svg>
+                    </button>
+                    <button class="p_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PDF">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                        <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+                        <path d="M17 18h2" />
+                        <path d="M20 15h-3v6" />
+                        <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" /></svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1001,63 +1155,63 @@
                     <span class="heading">
                       SL
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </span>
                   </th>
                   <th>
                     <div class="heading">
                       Item Name
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       CS NO
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       CS Date
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       Validity Date
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       Approved Name
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       Currency
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       Approve Price
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
                     <div class="heading">
                       Last Approved
                       <img class="icon-up" src="images/icon-up.svg" alt="icon-up">
-                      <img class="icon-down" src="images/icon-down.svg" alt="icon-down">
+
                     </div>
                   </th>
                   <th>
@@ -1081,7 +1235,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status pending">Pending</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status pending">Pending</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1098,7 +1287,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status cancel">Cancel</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status cancel">Cancel</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1115,7 +1339,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1132,7 +1391,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1149,7 +1443,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1166,7 +1495,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1183,7 +1547,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1200,7 +1599,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1217,7 +1651,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1234,7 +1703,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1251,7 +1755,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1268,7 +1807,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1285,7 +1859,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1302,7 +1911,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -1319,7 +1963,42 @@
                   <td>BDT</td>
                   <td>---</td>
                   <td>Approved by S M Latifur Rahman</td>
-                  <td><span class="status approved">Approved</span></td>
+                  <td>
+                    <div class="actions position-relative">
+                      <span class="status approved">Approved</span>
+                      <div class="action_btn">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                            <path d="M13.5 6.5l4 4" /></svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path
+                              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7l16 0" />
+                            <path d="M10 11l0 6" />
+                            <path d="M14 11l0 6" />
+                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -1342,7 +2021,7 @@
               <li class="active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
-              <li><a href="#">
+              <li class="rest"><a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-dots">

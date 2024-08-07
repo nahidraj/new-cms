@@ -1,5 +1,10 @@
 .table> :not(caption)>*>* {
-  padding: 0.4rem .8rem !important;
+  padding: 0.2rem 0.8rem !important;
+}
+
+th,
+td {
+  vertical-align: middle;
 }
 
 table {
@@ -22,17 +27,10 @@ table {
 
         img {
           width: 14px;
-          position: absolute;
-          right: -20px;
         }
 
         .icon-up {
-          margin-top: -2px;
-        }
-
-        .icon-down {
-          position: absolute;
-          top: 5px;
+          margin-top: 0;
         }
       }
     }
@@ -60,6 +58,18 @@ table {
         td {
           background-color: #F2F6FC;
         }
+
+        .action_btn {
+          background-color: #F2F6FC;
+          display: block;
+        }
+      }
+      a {
+        &:hover{
+          &::before {
+            background-color: $secondary;
+          }
+        }
       }
     }
 
@@ -73,11 +83,12 @@ table {
     }
 
     .status {
-      @include font(12px, 500);
+      font-size: 11px;
+      font-weight: 500;
       color: $white;
-      padding: 5px 14px;
+      padding: 3px 10px;
       border-radius: 40px;
-      min-width: 78px;
+      min-width: unset;
     }
 
     .pending {
@@ -91,11 +102,83 @@ table {
     .cancel {
       background-color: #D93025;
     }
+
+    .action_btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $white;
+      padding: 0 12px;
+      padding-right: 0;
+      height: 100%;
+      display: none;
+      z-index: 99;
+
+      a {
+        position: relative;
+        z-index: 9;
+        margin-left: 5px;
+
+        &::before {
+          height: 33px;
+          width: 33px;
+          background-color: transparent;
+          border-radius: 50%;
+          position: absolute;
+          top: -7px;
+          left: 7px;
+          content: "";
+          z-index: -1;
+        }
+      }
+
+      .icon {
+        width: 18px !important;
+        height: 18px !important;
+        color: $black;
+        margin-left: 15px;
+      }
+    }
   }
 }
 
 @media (max-width:1799.98px) {
-  .table> :not(caption)>*>* {
-    padding: 0.4rem 1rem !important;
+  .pagination_action .top_pagination .pagination p {
+    font-size: 13px;
+  }
+
+  .pagination_action .top_pagination {
+    gap: 14px !important;
+  }
+
+  .pagination_action .top_pagination .show_item {
+    gap: 14px !important;
+    margin-left: 8px !important;
+  }
+
+  .pagination_action .top_pagination .show_item .form-select {
+    padding: 0 10px !important;
+    width: 60px !important;
+    font-size: 13px;
+  }
+
+  .pagination_action .top_pagination .show_item .sh {
+    font-size: 13px;
+  }
+
+  .pagination_action .top_pagination .prev_next_btn .btns {
+    margin: 0 7px;
+
+    svg {
+      width: 18px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .pagination_action .print_action .p_btn {
+    margin-left: 1px;
   }
 }
