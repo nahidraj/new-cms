@@ -77,6 +77,24 @@ $(function () {
     });
   });
 
+  // advance search js
+  $(document).ready(function() {
+    // Toggle the show class on .advance_filter click
+    $(".advance_filter").on("click", function(event) {
+      event.stopPropagation(); // Prevent the click event from bubbling up to the document
+      $(".advance_search_result").toggleClass("show");
+    });
+  
+    // Remove the show class when clicking outside of .advance_search_result, .advance_filter, .search_box input, and .advance_search_btn
+    $(document).on("click", function(event) {
+      if (!$(event.target).closest('.advance_search_result, .advance_filter, .search_box input').length || $(event.target).is('.advance_search_btn')) {
+        $(".advance_search_result").removeClass("show");
+      }
+    });
+  });
+  
+
+
   // sidebar collapsed menu js
   // Check the saved state in localStorage and apply it
   if (localStorage.getItem("sidebarState") === "collapsed") {

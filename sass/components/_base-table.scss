@@ -64,8 +64,9 @@ table {
           display: block;
         }
       }
+
       a {
-        &:hover{
+        &:hover {
           &::before {
             background-color: $secondary;
           }
@@ -180,5 +181,13 @@ table {
 
   .pagination_action .print_action .p_btn {
     margin-left: 1px;
+  }
+
+  table tbody td {
+    font-size: 13px;
+  }
+
+  table thead th {
+    font-size: 13px;
   }
 }
