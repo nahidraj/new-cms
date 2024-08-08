@@ -1,0 +1,58 @@
+.help_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: $transition;
+}
+
+.show.help_overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.help_info_sidebar {
+  width: 320px;
+  background-color: $white;
+  border-left: 1px solid #ddf;
+  top: 0;
+  right: -320px;
+  height: 100%;
+  z-index: 9999;
+  transition: $transition;
+
+
+  .help_title {
+    @include font(24px, 600);
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  p+p {
+    margin-top: 14px;
+  }
+}
+
+.show.help_info_sidebar {
+  right: 0 !important;
+}
+
+@media (max-width:767.98px) {
+  .help_btn{
+    display: none;
+  }
+}

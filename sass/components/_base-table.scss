@@ -186,6 +186,10 @@ table {
     }
   }
 }
+th.sl{
+  min-width: unset !important;
+  max-width: 50px !important;
+}
 
 @media (max-width:1799.98px) {
   .pagination_action .top_pagination .pagination p {

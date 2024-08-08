@@ -19,9 +19,17 @@ $(function () {
   });
 
   // component loader js
-  $(".component_loader").fadeOut("slow", function () {
-    $(this).remove();
-  });
+  // $(".component_loader").fadeOut("slow", function () {
+  //   $(this).remove();
+  // });
+
+  // help info js
+  $(".help_btn").on("click",function(){
+    $(".help_overlay, .help_info_sidebar").addClass("show");
+  })
+  $(".help_overlay ").on("click",function(){
+    $(".help_overlay, .help_info_sidebar").removeClass("show");
+  })
 
   // update date and time
   function formatAMPM(date) {

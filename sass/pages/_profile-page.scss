@@ -1,0 +1,55 @@
+.profile_page {
+  .profile_info {
+    .bg {
+      background-size: cover !important;
+      height: 160px;
+      width: 100%;
+    }
+
+    .profile_image {
+      margin-top: -140px;
+
+      .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+    .profile_text {
+      margin-top: 24px;
+      padding-bottom: 30px;
+
+      .name {
+        @include font(24px, 600);
+        color: $black;
+        margin-bottom: 8px;
+      }
+
+      p {
+        @include font(16px, 500);
+        color: $paragraph;
+      }
+    }
+
+    .profile_description {
+      .info_item {
+        .title {
+          @include font(15px, 600);
+          margin-bottom: 5px;
+        }
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

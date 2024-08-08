@@ -12,6 +12,7 @@
       }
     }
   }
+
   .view_file {
     margin-top: 10px;
 
@@ -85,8 +86,27 @@
   }
 }
 
+.view_t_head {
+  width: 35%;
+}
+
+@media (max-width:1399.98px) {
+
+  .view_t_head {
+    width: 45%;
+  }
+}
+
+@media (max-width:1199.98px) {
+
+  .view_t_head {
+    width: 35%;
+  }
+}
+
+
 @media (max-width:575.98px) {
-  .viewer_action_btn{
+  .viewer_action_btn {
     display: none;
   }
 }

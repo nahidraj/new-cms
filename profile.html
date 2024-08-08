@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="CMS">
+  <link rel="shortcut icon" href="images/Fevicon.png" type="image/x-icon">
+  <!--all css link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <!-- full page loading -->
+  <div class="fullpage_loader">
+    <div class="loader"></div>
+  </div>
+  <!-- main area start -->
+  <main class="nsl_cms">
+    <aside class="sidebar position-fixed top-0 start-0 h-100 w-100">
+      <div class="d-flex justify-content-between align-items-center gap-4">
+        <div class="logo">
+          <a href="index.html"><img width="140" src="images/logo.png" alt="logo"></a>
+        </div>
+        <button class="close_mobile_sidebar bg-transparent border-0 d-block d-lg-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" /></svg>
+        </button>
+      </div>
+      <div class="menu_list">
+        <ul class="list-unstyled">
+          <li class="menu_item active">
+            <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                  <path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+                  <path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                  <path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+              </div>
+              <div class="menu_name">
+                Dashboard
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">5</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="list-page.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Default">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-a-b-2">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M16 21h3c.81 0 1.48 -.67 1.48 -1.48l.02 -.02c0 -.82 -.69 -1.5 -1.5 -1.5h-3v3z" />
+                  <path d="M16 15h2.5c.84 -.01 1.5 .66 1.5 1.5s-.66 1.5 -1.5 1.5h-2.5v-3z" />
+                  <path d="M4 9v-4c0 -1.036 .895 -2 2 -2s2 .964 2 2v4" />
+                  <path d="M2.99 11.98a9 9 0 0 0 9 9m9 -9a9 9 0 0 0 -9 -9" />
+                  <path d="M8 7h-4" /></svg>
+              </div>
+              <div class="menu_name">
+                List Page
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="form-page.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Analytic">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-heart">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                  <path d="M6 4v4" />
+                  <path d="M6 12v8" />
+                  <path d="M12 4v8.5" />
+                  <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                  <path d="M18 4v1" />
+                  <path d="M18 9v2.5" />
+                  <path
+                    d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+                </svg>
+              </div>
+              <div class="menu_name">
+                Form Page
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">14</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="view-page.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sales">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-affiliate">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275" />
+                  <path d="M11.683 12.317l5.759 -5.759" />
+                  <path d="M5.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M18.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M18.5 18.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                  <path d="M8.5 15.5m-4.5 0a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0" /></svg>
+              </div>
+              <div class="menu_name">
+                View Page
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dropdown Menu">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-ad-circle-off">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4.91 4.949a9.968 9.968 0 0 0 -2.91 7.051c0 5.523 4.477 10 10 10a9.968 9.968 0 0 0 7.05 -2.909" />
+                  <path
+                    d="M20.778 16.793a9.955 9.955 0 0 0 1.222 -4.793c0 -5.523 -4.477 -10 -10 -10c-1.74 0 -3.376 .444 -4.8 1.225" />
+                  <path d="M7 15v-4.5a1.5 1.5 0 0 1 2.138 -1.358" />
+                  <path d="M9.854 9.853c.094 .196 .146 .415 .146 .647v4.5" />
+                  <path d="M7 13h3" />
+                  <path d="M14 14v1h1" />
+                  <path d="M17 13v-2a2 2 0 0 0 -2 -2h-1v1" />
+                  <path d="M3 3l18 18" /></svg>
+              </div>
+              <div class="menu_name">
+                Dropdown Menu
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">5</div>
+                <div class="arrow_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg>
+                </div>
+              </div>
+            </a>
+            <ul class="list-unstyled sub_menu">
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Fiber Optic Cable">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Dropdown Menu 2
+                  </div>
+                  <div class="menu_info">
+                    <div class="arrow_icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 9l6 6l6 -6" /></svg>
+                    </div>
+                  </div>
+                </a>
+                <ul class="list-unstyled sub_menu">
+                  <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                      data-bs-title="If the menu name is long">
+                      <div class="menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M5 12l14 0" /></svg>
+                      </div>
+                      <div class="menu_name">
+                        If the menu name is long
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Lithium Battery">
+                      <div class="menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M5 12l14 0" /></svg>
+                      </div>
+                      <div class="menu_name">
+                        Menu level 3
+                      </div>
+                    </a></li>
+                </ul>
+              </li>
+              <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Lithium Battery">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Lithium Battery
+                  </div>
+                </a></li>
+              <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="LED Light">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    LED Light
+                  </div>
+                </a></li>
+            </ul>
+          </li>
+          <li class="menu_item">
+            <a href="profile.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Mail">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-air-balloon">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 19m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                  <path d="M12 16c3.314 0 6 -4.686 6 -8a6 6 0 1 0 -12 0c0 3.314 2.686 8 6 8z" />
+                  <path d="M12 9m-2 0a2 7 0 1 0 4 0a2 7 0 1 0 -4 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Profile Page
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="loading.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Default">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-loader">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 6l0 -3" />
+                  <path d="M16.25 7.75l2.15 -2.15" />
+                  <path d="M18 12l3 0" />
+                  <path d="M16.25 16.25l2.15 2.15" />
+                  <path d="M12 18l0 3" />
+                  <path d="M7.75 16.25l-2.15 2.15" />
+                  <path d="M6 12l-3 0" />
+                  <path d="M7.75 7.75l-2.15 -2.15" /></svg>
+              </div>
+              <div class="menu_name">
+                Loader
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Analytic">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-analyze">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M20 11a8.1 8.1 0 0 0 -6.986 -6.918a8.095 8.095 0 0 0 -8.019 3.918" />
+                  <path d="M4 13a8.1 8.1 0 0 0 15 3" />
+                  <path d="M19 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                  <path d="M5 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Analytic
+              </div>
+              <div class="menu_info">
+                <div class="menu_number">23</div>
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sales">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-anchor">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />
+                  <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+              </div>
+              <div class="menu_name">
+                Sales
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Mail">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-antenna-bars-5">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 18l0 -3" />
+                  <path d="M10 18l0 -6" />
+                  <path d="M14 18l0 -9" />
+                  <path d="M18 18l0 -12" /></svg>
+              </div>
+              <div class="menu_name">
+                Mail
+              </div>
+            </a>
+          </li>
+          <li class="menu_item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Chat">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                  <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                  <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                  <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" /></svg>
+              </div>
+              <div class="menu_name">
+                Chat
+              </div>
+              <div class="menu_info">
+                <div class="arrow_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 9l6 6l6 -6" /></svg>
+                </div>
+              </div>
+            </a>
+            <ul class="list-unstyled sub_menu">
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <div class="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-minus">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" /></svg>
+                  </div>
+                  <div class="menu_name">
+                    Fiber Optic Cable
+                  </div>
+                </a></li>
+            </ul>
+          </li>
+          <li class="menu_item">
+            <a href="#">
+              <div class="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-automation">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M13 20.693c-.905 .628 -2.36 .292 -2.675 -1.01a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.492 .362 1.716 2.219 .674 3.03" />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path d="M17 22l5 -3l-5 -3z" /></svg>
+              </div>
+              <div class="menu_name">
+                Calendar
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="log_out">
+        <a href="#" class="logout_btn">
+          <div class="text">
+            Log Out
+          </div>
+          <span class="sign">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+              <path d="M9 12h12l-3 -3" />
+              <path d="M18 15l3 -3" /></svg>
+          </span>
+        </a>
+      </div>
+      <div class="log_out2 d-none">
+        <a href="#" class="logout_btn2">
+          <span class="sign">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+              <path d="M9 12h12l-3 -3" />
+              <path d="M18 15l3 -3" /></svg>
+          </span>
+        </a>
+      </div>
+    </aside>
+    <div class="right_content">
+      <header class="header_area w-100">
+        <div class="row">
+          <div class="col-md-4 col-4 align-self-center">
+            <div class="header_left">
+              <div class="main d-flex gap-2 align-items-center">
+                <div class="sidebar_control_bar">
+                  <button class="sidebar_control_btn border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M4 6h16" />
+                      <path d="M7 12h13" />
+                      <path d="M10 18h10" /></svg>
+                  </button>
+                </div>
+                <div class="logo2 d-none">
+                  <a href="index.html"><img width="120" src="images/logo.png" alt="logo"></a>
+                </div>
+                <!-- <div class="header_search w-100">
+                  <div class="input_groups position-relative w-100">
+                    <button class="bg-transparent border-0 position-absolute translate-middle-y top-50">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" /></svg>
+                    </button>
+                    <input class="rounded-5 w-100" type="text" placeholder="Search...">
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-8 align-self-center">
+            <div class="header_right d-flex align-items-center justify-content-end gap-4">
+              <div class="date_time position-relative">
+                <p id="currentDateTime"></p>
+              </div>
+              <div class="action_info d-flex gap-4 align-items-center">
+                <div class="icon_box position-relative">
+                  <button class="icon_btn dropdown_menu bg-transparent border-0 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                      <path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                    <sup
+                      class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">5</sup>
+                  </button>
+                  <div
+                    class="information_box dropdown_menu_info notification_information position-absolute top-100 end-0">
+                    <div class="top d-flex justify-content-between align-items-center gap-4">
+                      <h3 class="title">Notification</h3>
+                      <button class="clear bg-transparent border-0">Clear</button>
+                    </div>
+                    <div class="list">
+                      <!-- <h4 class="no_list">
+                        <div><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alarm-minus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M7 4l-2.75 2" /><path d="M17 4l2.75 2" /><path d="M10 13h4" /></svg></div>
+                        No Notification Found
+                      </h4> -->
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img warning">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 9v4" />
+                                <path
+                                  d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+                                <path d="M12 16h.01" /></svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" /></svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img"><img src="images/profile-user.png" alt="profile-user"></div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btm text-center">
+                      <button class="view w-100">View All</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon_box position-relative ">
+                  <button class="icon_btn dropdown_menu bg-transparent border-0 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M8 9h8" />
+                      <path d="M8 13h6" />
+                      <path
+                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                    </svg>
+                    <sup
+                      class="notification_number position-absolute rounded-pill d-flex justify-content-center align-items-center">2</sup>
+                  </button>
+                  <div class="information_box dropdown_menu_info messages_information position-absolute top-100 end-0">
+                    <div class="top d-flex justify-content-between align-items-center gap-4">
+                      <h3 class="title">Messages</h3>
+                      <button class="clear bg-transparent border-0">Clear</button>
+                    </div>
+                    <div class="list">
+                      <ul class="list-unstyled">
+                        <!-- <h4 class="no_list">
+                          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-messenger">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                              <path d="M8 13l3 -2l2 2l3 -2" /></svg></div>
+                          No Messages Found
+                        </h4> -->
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex w-100 align-items-center">
+                            <div class="img mail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path
+                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                              </svg>
+                            </div>
+                            <div class="info">
+                              <h4 class="name">Erin Gonzales</h4>
+                              <p>comment on your board</p>
+                            </div>
+                            <div class="time">7:57PM</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btm text-center">
+                      <button class="view w-100">View All</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="user_box position-relative">
+                  <button class="user_image dropdown_menu rounded-pill bg-transparent border-0 position-relative">
+                    <img class="rounded-pill w-100 h-100 object-fit-cover" src="images/profile-user.png"
+                      alt="profile-user">
+                  </button>
+                  <div class="user_information position-absolute dropdown_menu_info">
+                    <div class="edit_image text-center">
+                      <div class="image position-relative">
+                        <img src="images/profile-edit.png" alt="profile-edit">
+                        <div class="edit_input">
+                          <label for="file">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                              <path d="M13.5 6.5l4 4" /></svg>
+                          </label>
+                          <input type="file" id="file" class="d-none">
+                        </div>
+                      </div>
+                      <div class="name text-center">
+                        <h4 class="nm">Nogor Solutions Limited</h4>
+                        <a href="#" class="edit">Edit Your Profile</a>
+                      </div>
+                      <div class="menus text-start">
+                        <ul class="list-unstyled">
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-contrast-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                                <path d="M3 19h2.25c3.728 0 6.75 -3.134 6.75 -7s3.022 -7 6.75 -7h2.25" /></svg>
+                              User Role
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-settings-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+                              Site Settings
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-topology-full-hierarchy">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M8 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M8 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M20 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M14 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
+                                <path d="M6 8v8" />
+                                <path d="M18 16v-8" />
+                                <path d="M8 6h8" />
+                                <path d="M16 18h-8" />
+                                <path d="M7.5 7.5l3 3" />
+                                <path d="M13.5 13.5l3 3" />
+                                <path d="M16.5 7.5l-3 3" />
+                                <path d="M10.5 13.5l-3 3" /></svg>
+                              Activity Log
+                            </a></li>
+                          <li><a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M9 12h12l-3 -3" />
+                                <path d="M18 15l3 -3" /></svg>
+                              Log Out
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content_body position-relative">
+        <!-- <div class="component_loader">
+          <div class="loader"></div>
+        </div> -->
+        <div class="content_main">
+          <div class="page_header d-flex align-items-center justify-content-between gap-4">
+            <h4 class="form_card_title">Profile Page
+            </h4>
+            <div class="right_page_header">
+              <a href="#" class="back_or_add_btn">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M5 12l6 6" />
+                    <path d="M5 12l6 -6" /></svg>
+                </span>
+                Back
+              </a>
+            </div>
+          </div>
+          <div class="profile_page">
+            <div class="row g-3">
+              <div class="col-xxl-9 col-xl-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card_title">Personal Information</h4>
+                    <form action="#">
+                      <div class="row g-3">
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                First Name <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your first name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Last Name
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your last name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Select Gender
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <select class="chosen">
+                                <option>--Select Gender--</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Phone Number
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your phone">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Email Address
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Birthdate
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="date" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Description
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <textarea rows="6" class="textarea-control h-auto"
+                                placeholder="Write your description"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <h4 class="card_title mt-3 mb-0">Address Information</h4>
+                        </div>
+                        <div class="col-xl-8 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Address <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <textarea class="textarea-control" placeholder="Enter your home address"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                City <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your city">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                State <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your state">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Zip Code <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your zipcode">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                          <div class="form-group">
+                            <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                              <div class="lft">
+                                Road Number <sup class="text-danger">*</sup>
+                              </div>
+                            </label>
+                            <div class="input-group position-relative">
+                              <input type="text" class="form-control" placeholder="Enter your road number">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="theme_btn">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-3 col-xl-4">
+                <div class="profile_info">
+                  <div class="row g-3">
+                    <div class="col-md-6 col-xl-12">
+                      <div class="card overflow-hidden">
+                        <div class="bg" style="background: url(images/profile-bg.jpg) no-repeat center;"></div>
+                        <div class="card-body p-0">
+                          <div class="profile_image">
+                            <div class="image position-relative">
+                              <div class="img position-relative">
+                                <img src="images/profile-edit.png" alt="profile-edit" class="img-fluid w-100">
+                              </div>
+                              <label class="file_upload_label" for="file">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                  <path d="M7 9l5 -5l5 5" />
+                                  <path d="M12 4l0 12" /></svg>
+                              </label>
+                              <input type="file" id="file" class="d-none">
+                            </div>
+                          </div>
+                          <div class="profile_text text-center">
+                            <h3 class="name">Raihana Islam</h3>
+                            <p class="designation">Software Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-12">
+                      <div class="card overflow-hidden">
+                        <div class="card-body">
+                          <div class="profile_description">
+                            <h4 class="card_title mb-2">About Me</h4>
+                            <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius
+                              similique necessitatibus dolor, voluptates at deserunt architecto ullam doloremque nisi
+                              vitae debitis</p>
+                            <h4 class="card_title my-3">Personal Information</h4>
+                            <div class="info_item d-flex align-items-center gap-3">
+                              <div class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                              </div>
+                              <div class="info">
+                                <h5 class="title">Email Address</h5>
+                                <p>info@nogorsolutions.com</p>
+                              </div>
+                            </div>
+                            <div class="info_item d-flex align-items-center gap-3">
+                              <div class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                              </div>
+                              <div class="info">
+                                <h5 class="title">Phone Number</h5>
+                                <p>01748007847</p>
+                              </div>
+                            </div>
+                            <div class="info_item d-flex align-items-center gap-3">
+                              <div class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+                              </div>
+                              <div class="info">
+                                <h5 class="title">Location</h5>
+                                <p>Gulshan, Dhaka - 1212</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer_area text-center">
+          <p>Copyright © 2024 <a href="#">Nogor Solutions Limited.</a> All Rights Reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <!-- main area end -->
+
+
+  <!-- all js link -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

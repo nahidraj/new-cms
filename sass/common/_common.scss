@@ -77,6 +77,25 @@ body {
   }
 }
 
+.p_1{
+  @include font(15px, 400);
+  color: $black;
+  line-height: 24px;
+}
+
+.help_btn{
+  background-color: #178521;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 0;
+  color: $white;
+  .icon{
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .row {
   --bs-gutter-x: 16px;
 }
