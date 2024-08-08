@@ -69,15 +69,22 @@
 // base pagination
 .base_pagination {
   margin-top: 14px;
-  .number{
+
+  .number {
     @include font(15px, 500);
     color: $black;
   }
+
   ul {
     display: inline-flex;
     gap: 3px;
 
     li {
+
+      svg {
+        width: 17px;
+        height: 17px;
+      }
       a {
         width: 32px;
         height: 32px;
@@ -101,8 +108,12 @@
         }
       }
     }
-    .rest{
-      a{
+
+    .rest {
+      align-self: center;
+      margin: 0 3px;
+
+      a {
         border: 0;
       }
     }

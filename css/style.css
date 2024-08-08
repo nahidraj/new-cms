@@ -1626,6 +1626,10 @@ body {
   display: inline-flex;
   gap: 3px;
 }
+.base_pagination ul li svg {
+  width: 17px;
+  height: 17px;
+}
 .base_pagination ul li a {
   width: 32px;
   height: 32px;
@@ -1646,6 +1650,10 @@ body {
 .base_pagination ul li a svg {
   width: 19px;
   height: 19px;
+}
+.base_pagination ul .rest {
+  align-self: center;
+  margin: 0 3px;
 }
 .base_pagination ul .rest a {
   border: 0;
