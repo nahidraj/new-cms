@@ -376,7 +376,7 @@
               a {
                 @include font(15px, 400);
                 color: $black;
-                padding: 12px 14px;
+                padding: 9px 14px;
                 display: flex;
                 align-items: center;
                 border-bottom: 1px solid $secondary;
@@ -417,6 +417,17 @@
     top: -3px;
     right: -2px;
     font-size: 10px;
+  }
+
+  .header_area .header_right .action_info .user_box .user_information .menus li a {
+    font-size: 14px;
+  }
+
+  .header_area .header_right .action_info .user_box .user_information .menus li a svg {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -1px;
   }
 }
 
