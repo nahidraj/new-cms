@@ -995,6 +995,7 @@ body {
   background-color: #F6F8FC;
   border: 1px solid #E1E3E1;
   border-radius: 10px;
+  height: 100%;
 }
 
 .card_title {
@@ -1671,6 +1672,15 @@ th {
   color: #141314;
   font-size: 14px;
   font-weight: 600;
+  background-color: #ffffff !important;
+}
+
+td {
+  background-color: #ffffff !important;
+}
+
+tr:hover td {
+  background-color: #F2F6FC !important;
 }
 
 table {
@@ -1690,12 +1700,14 @@ table thead th {
 table thead th .heading {
   position: relative;
   display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 table thead th .heading img {
   width: 14px;
 }
 table thead th .heading .icon-up {
-  margin-top: 0;
+  margin-left: 4px;
 }
 table thead .action_th {
   padding-left: 0 !important;
@@ -1704,12 +1716,19 @@ table thead .action_th {
 table .check {
   position: relative;
   top: 0;
+  width: 45px !important;
 }
-table .form-check-input {
+table .form-check {
+  padding-left: 0 !important;
+  position: relative;
+  top: 1px;
+}
+table .form-check .form-check-input {
   box-shadow: none !important;
   cursor: pointer;
+  margin-left: 0 !important;
 }
-table .form-check-input:checked {
+table .form-check .form-check-input:checked {
   background-color: #1A73E8;
 }
 table tbody tr:hover td {
