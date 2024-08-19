@@ -645,6 +645,10 @@ body {
   border-bottom-right-radius: 50px;
   transition: none !important;
 }
+.sidebar .menu_list .menu_item a .menu_icon {
+  position: relative;
+  top: -1px;
+}
 .sidebar .menu_list .menu_item a .menu_icon svg {
   width: 18px;
   height: 18px;
@@ -1908,7 +1912,7 @@ th.sl {
   margin-top: 1px;
   left: 0;
   border: 1px solid #E3E3E3;
-  z-index: 99;
+  z-index: 9;
   padding: 14px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: none;
@@ -1929,7 +1933,7 @@ th.sl {
 fieldset {
   background-color: #ffffff;
   border: 1px solid #E3E3E3;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 14px;
   position: relative;
   height: 100%;
@@ -2239,6 +2243,99 @@ fieldset table {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+.album-list-area .album_item .img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.album-list-area .album_item .img img {
+  object-fit: cover;
+  object-position: center;
+}
+.album-list-area .album_item .img .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-out 0s;
+  visibility: hidden;
+  opacity: 0;
+}
+.album-list-area .album_item .album_title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+.album-list-area .album_item .album_info {
+  transition: all 0.3s ease-out 0s;
+  visibility: hidden;
+  opacity: 0;
+  width: 152px;
+}
+.album-list-area .album_item .album_info .action_box {
+  background-color: #f7faff;
+  text-align: center;
+  padding: 3px 3px;
+  border-radius: 5px;
+}
+.album-list-area .album_item .album_info .album_action_btn {
+  margin: 0 0;
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: none;
+}
+.album-list-area .album_item .album_info .album_action_btn:hover {
+  background-color: #D3E3FD;
+}
+.album-list-area .album_item .album_info .album_action_btn .icon {
+  width: 18px !important;
+  height: 18px !important;
+  color: #141314;
+}
+.album-list-area .album_item .back_or_add_btn {
+  position: absolute;
+  bottom: 55px;
+  right: -80px;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-out 0s;
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0.1s;
+}
+.album-list-area .album_item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.album-list-area .album_item:hover .album_info {
+  visibility: visible;
+  opacity: 1;
+}
+.album-list-area .album_item:hover .back_or_add_btn {
+  visibility: visible;
+  opacity: 1;
+  right: -40px;
+}
+
+.content_view_page .content_view_title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.content_view_page p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.content_view_page p + p {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,10 +24,10 @@ $(function () {
   // });
 
   // help info js
-  $(".help_btn").on("click",function(){
+  $(".help_btn").on("click", function () {
     $(".help_overlay, .help_info_sidebar").addClass("show");
   })
-  $(".help_overlay ").on("click",function(){
+  $(".help_overlay ").on("click", function () {
     $(".help_overlay, .help_info_sidebar").removeClass("show");
   })
 
@@ -63,45 +63,34 @@ $(function () {
   setInterval(updateDateTime, 1000); // Update every second
 
   // dropdown menu js
-  $(document).ready(function () {
-    // Toggle dropdown menu on button click
-    $(".dropdown_menu").on("click", function (e) {
-      e.stopPropagation(); // Prevent the click event from bubbling up to the document
-      var $menu = $(this).next(".dropdown_menu_info");
-      $(".dropdown_menu_info").not($menu).removeClass("control_dropdown_menu");
-      $menu.toggleClass("control_dropdown_menu");
-    });
-
-    // Close dropdown menu when clicking outside of it
-    $(document).on("click", function (e) {
-      if (!$(e.target).closest('.dropdown_menu_info').length) {
-        $(".dropdown_menu_info").removeClass("control_dropdown_menu");
-      }
-    });
-
-    // Prevent dropdown menu from closing when clicking inside it
-    $(".dropdown_menu_info").on("click", function (e) {
-      e.stopPropagation(); // Prevent the click event from bubbling up to the document
-    });
+  $(".dropdown_menu").on("click", function (e) {
+    e.stopPropagation(); // Prevent the click event from bubbling up to the document
+    var $menu = $(this).next(".dropdown_menu_info");
+    $(".dropdown_menu_info").not($menu).removeClass("control_dropdown_menu");
+    $menu.toggleClass("control_dropdown_menu");
+  });
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest('.dropdown_menu_info').length) {
+      $(".dropdown_menu_info").removeClass("control_dropdown_menu");
+    }
+  });
+  $(".dropdown_menu_info").on("click", function (e) {
+    e.stopPropagation(); // Prevent the click event from bubbling up to the document
   });
 
   // advance search js
-  $(document).ready(function() {
     // Toggle the show class on .advance_filter click
-    $(".advance_filter").on("click", function(event) {
+    $(".advance_filter").on("click", function (event) {
       event.stopPropagation(); // Prevent the click event from bubbling up to the document
       $(".advance_search_result").toggleClass("show");
     });
-  
+
     // Remove the show class when clicking outside of .advance_search_result, .advance_filter, .search_box input, and .advance_search_btn
-    $(document).on("click", function(event) {
+    $(document).on("click", function (event) {
       if (!$(event.target).closest('.advance_search_result, .advance_filter, .search_box input').length || $(event.target).is('.advance_search_btn')) {
         $(".advance_search_result").removeClass("show");
       }
     });
-  });
-  
-
 
   // sidebar collapsed menu js
   // Check the saved state in localStorage and apply it

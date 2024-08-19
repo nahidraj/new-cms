@@ -72,16 +72,17 @@ table {
     width: 45px !important;
   }
 
-  .form-check{
+  .form-check {
     padding-left: 0 !important;
     position: relative;
     top: 1px;
+
     .form-check-input {
       box-shadow: none !important;
       cursor: pointer;
       margin-left: 0 !important;
-  
-  
+
+
       &:checked {
         background-color: $tertiary;
       }
@@ -186,11 +187,13 @@ table {
     }
   }
 }
-th.sl{
+
+th.sl {
   min-width: unset !important;
   max-width: 50px !important;
 }
-.base_table_list{
+
+.base_table_list {
   min-height: 550px;
   max-height: 550px;
   overflow-y: auto;

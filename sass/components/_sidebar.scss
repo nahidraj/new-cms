@@ -34,6 +34,8 @@
         transition: none !important;
 
         .menu_icon {
+          position: relative;
+          top: -1px;
           svg {
             width: 18px;
             height: 18px;

@@ -963,7 +963,7 @@
         <div class="content_main">
 
           <div class="page_header d-flex align-items-center justify-content-between gap-4">
-            <h4 class="form_card_title">Form Page
+            <h4 class="form_card_title">Site Settings
             </h4>
             <div class="right_page_header">
               <button class="help_btn">
@@ -990,614 +990,338 @@
               </a>
             </div>
           </div>
+          <div class="viewer_devider"></div>
           <form action="#">
-            <div class="row g-3">
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Reg Date
-                      <!-- icon validate -->
-                      <span class="icon_validate">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
-                        </svg>
-                      </span>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="date" class="form-control">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Company Name <sup class="text-danger">*</sup>
-                      <!-- icon error -->
-                      <span class="icon_error">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-help-octagon">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M14.897 1a4 4 0 0 1 2.664 1.016l.165 .156l4.1 4.1a4 4 0 0 1 1.168 2.605l.006 .227v5.794a4 4 0 0 1 -1.016 2.664l-.156 .165l-4.1 4.1a4 4 0 0 1 -2.603 1.168l-.227 .006h-5.795a3.999 3.999 0 0 1 -2.664 -1.017l-.165 -.156l-4.1 -4.1a4 4 0 0 1 -1.168 -2.604l-.006 -.227v-5.794a4 4 0 0 1 1.016 -2.664l.156 -.165l4.1 -4.1a4 4 0 0 1 2.605 -1.168l.227 -.006h5.793zm-2.897 14a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1.368 -6.673a2.98 2.98 0 0 0 -3.631 .728a1 1 0 0 0 1.44 1.383l.171 -.18a.98 .98 0 0 1 1.11 -.15a1 1 0 0 1 -.34 1.886l-.232 .012a1 1 0 0 0 .111 1.994a3 3 0 0 0 1.371 -5.673z" />
-                        </svg>
-                        <span class="error_info active_error_info">Company name is required</span>
-                      </span>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="text" class="form-control error" placeholder="Enter your company name">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Telephone <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="text" class="form-control" placeholder="Ex: 01740008006">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Email <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Ex: info@gmail.com">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Trade license no
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter you trade license no">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      BIN No
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter you BIN no">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      TIN No
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter you TIN no">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Bank name
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter your bank name">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Bank Account NO
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter your bank account no">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Bank Branch Name
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter your bank branch name">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Routing no
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="email" class="form-control" placeholder="Enter your routing no">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Currency
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <select class="chosen">
-                      <option>--Select Currency--</option>
-                      <option>Taka</option>
-                      <option>USA Dollar</option>
-                      <option>USA Dollar</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Remarks
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <input type="text" class="form-control" placeholder="Remarks">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Address
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="input-group position-relative">
-                    <textarea class="textarea-control" placeholder="Enter your address"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-12 align-self-center">
-                <div class="form-group">
-                  <label class="form-label">
-                    Switch <sup class="text-danger">*</sup>
-                  </label>
-                  <div class="status_box">
-                    <div class="status_select">
-                      <input class="switch" type="checkbox" checked="true">
-                    </div>
-                    <div class="action">
-                      <span class="active">Active</span>
-                      <span class="deactive d-none">Deactive</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-3 col-lg-6 col-xl-4 col-md-6 align-self-center">
-                <div class="form-group">
-                  <label class="form-label">
-                    Checkbox <sup class="text-danger">*</sup>
-                  </label>
-                  <div class="check_box">
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked1">
-                      <label class="form-check-label" for="flexCheckChecked1">
-                        Saturday
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked2">
-                      <label class="form-check-label" for="flexCheckChecked2">
-                        Sunday
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked3"
-                        checked>
-                      <label class="form-check-label" for="flexCheckChecked3">
-                        Monday
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-3 col-lg-6 col-xl-4 col-md-6 align-self-center">
-                <div class="form-group">
-                  <label class="form-label">
-                    Radio box <sup class="text-danger">*</sup>
-                  </label>
-                  <div class="radio_box">
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault"
-                        id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Male
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault"
-                        id="flexRadioDefault2" checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Female
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault"
-                        id="flexRadioDefault3" checked>
-                      <label class="form-check-label" for="flexRadioDefault3">
-                        Others
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-3 col-md-12"></div>
-              <div class="col-xxl-3 col-md-12"></div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Logo <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="image_upload_box">
-                    <div class="upload_box position-relative">
-                      <div class="img position-relative">
-                        <img src="images/img-cover.png" alt="img-cover" class="img-fluid w-100">
-                        <button type="button" class="close_image">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" /></svg>
-                        </button>
+            <div class="row custom_row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <span class="legend">Media Images</span>
+                  <div class="row g-3 pt-2">
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Logo <sup class="text-danger">*</sup>
+                          </div>
+                        </label>
+                        <div class="image_upload_box">
+                          <div class="upload_box position-relative">
+                            <div class="img position-relative">
+                              <img src="images/img-cover.png" alt="img-cover" class="img-fluid w-100">
+                              <button type="button" class="close_image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                  <path d="M18 6l-12 12" />
+                                  <path d="M6 6l12 12" /></svg>
+                              </button>
+                            </div>
+                            <label class="file_upload_label" for="file">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                <path d="M7 9l5 -5l5 5" />
+                                <path d="M12 4l0 12" /></svg>
+                            </label>
+                            <input type="file" id="file" class="d-none">
+                          </div>
+                          <p>Max: Not defined</p>
+                        </div>
                       </div>
-                      <label class="file_upload_label" for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                          class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-                          <path d="M7 9l5 -5l5 5" />
-                          <path d="M12 4l0 12" /></svg>
-                      </label>
-                      <input type="file" id="file" class="d-none">
                     </div>
-                    <p>Max: Not defined</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Logo 2 <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="image_upload_box">
-                    <div class="upload_box position-relative">
-                      <div class="img position-relative">
-                        <img src="images/img-cover.png" alt="img-cover" class="img-fluid w-100">
-                        <button type="button" class="close_image">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" /></svg>
-                        </button>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Favicon Logo <sup class="text-danger">*</sup>
+                          </div>
+                        </label>
+                        <div class="image_upload_box">
+                          <div class="upload_box position-relative">
+                            <div class="img position-relative">
+                              <img src="images/img-cover.png" alt="img-cover" class="img-fluid w-100">
+                              <button type="button" class="close_image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                  <path d="M18 6l-12 12" />
+                                  <path d="M6 6l12 12" /></svg>
+                              </button>
+                            </div>
+                            <label class="file_upload_label" for="file">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                <path d="M7 9l5 -5l5 5" />
+                                <path d="M12 4l0 12" /></svg>
+                            </label>
+                            <input type="file" id="file" class="d-none">
+                          </div>
+                          <p>Max: Not defined</p>
+                        </div>
                       </div>
-                      <label class="file_upload_label" for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                          class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-                          <path d="M7 9l5 -5l5 5" />
-                          <path d="M12 4l0 12" /></svg>
-                      </label>
-                      <input type="file" id="file" class="d-none">
                     </div>
-                    <p>Max: Not defined</p>
                   </div>
-                </div>
+                </fieldset>
               </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Trade license <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="image_upload_box">
-                    <div class="upload_box position-relative">
-                      <div class="img position-relative">
-                        <img src="images/pdf-cover.png" alt="img-cover" class="img-fluid w-100">
-                        <button type="button" class="close_image">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" /></svg>
-                        </button>
+              <div class="col-lg-6">
+                <fieldset>
+                  <span class="legend">Address</span>
+                  <div class="row g-3 pt-2">
+                    <div class="col-xl-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Full Address
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <textarea class="textarea-control h-auto" rows="3"
+                            placeholder="Enter your full address"></textarea>
+                        </div>
                       </div>
-                      <label class="file_upload_label" for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                          class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-                          <path d="M7 9l5 -5l5 5" />
-                          <path d="M12 4l0 12" /></svg>
-                      </label>
-                      <input type="file" id="file" class="d-none">
                     </div>
-                    <p>Max: Not defined</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="form-group">
-                  <label class="form-label d-flex justify-content-between align-items-center gap-4">
-                    <div class="lft">
-                      Bin certificate <sup class="text-danger">*</sup>
-                    </div>
-                    <!-- <div class="rgt">
-                      <button class="info_btn bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-title="Please insert Reg date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-info-circle">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
-                        </svg>
-                      </button>
-                    </div> -->
-                  </label>
-                  <div class="image_upload_box">
-                    <div class="upload_box position-relative">
-                      <div class="img position-relative">
-                        <img src="images/pdf-cover.png" alt="img-cover" class="img-fluid w-100">
-                        <button type="button" class="close_image">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" /></svg>
-                        </button>
+                    <div class="col-xl-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Google Map Link
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <textarea class="textarea-control h-auto" rows="3"
+                            placeholder="Enter your full address"></textarea>
+                        </div>
                       </div>
-                      <label class="file_upload_label" for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                          class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-                          <path d="M7 9l5 -5l5 5" />
-                          <path d="M12 4l0 12" /></svg>
-                      </label>
-                      <input type="file" id="file" class="d-none">
                     </div>
-                    <p>Max: Not defined</p>
                   </div>
-                </div>
+                </fieldset>
               </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <span class="legend">Information</span>
+                  <div class="row g-3 pt-2">
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Title <sup class="text-danger">*</sup>
+                            <!-- icon validate -->
+                            <span class="icon_validate">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                              </svg>
+                            </span>
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter title"
+                            value="Nogor Solutions Limited">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Short Title <sup class="text-danger">*</sup>
+                            <!-- icon validate -->
+                            <span class="icon_validate">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                              </svg>
+                            </span>
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter site title" value="nsl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Contact Email (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter contact email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Feedback Email (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter feedback email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Mobile One
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter mobile one">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Mobile Two
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter mobile two">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Mission
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter mission">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Vision
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter vision">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Motto
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter motto">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            about us short description
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter short description">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <span class="legend">Important Links</span>
+                  <div class="row g-3 pt-2">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Web (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter website link">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Facebook (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter facebook link">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Twitter (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter twitter link">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Linkedin (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter linkedin id">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-label d-flex justify-content-between align-items-center gap-4">
+                          <div class="lft">
+                            Youtube (Optional)
+                          </div>
+                        </label>
+                        <div class="input-group position-relative">
+                          <input type="text" class="form-control" placeholder="Enter youtube link">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row mt-3">
               <div class="col-xl-3 col-md-6">
                 <button type="submit" class="theme_btn">Submit</button>
               </div>
