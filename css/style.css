@@ -1696,7 +1696,6 @@ body {
 
 .table_sorting_number {
   max-width: 45px;
-  display: none;
 }
 .table_sorting_number input {
   width: 100%;
