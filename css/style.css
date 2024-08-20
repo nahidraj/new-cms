@@ -1694,8 +1694,32 @@ body {
   border-color: #D3E3FD;
 }
 
+.table_sorting_number {
+  max-width: 45px;
+  display: none;
+}
+.table_sorting_number input {
+  width: 100%;
+  border: 1px solid #dadada;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 4px;
+  padding-right: 0;
+  font-size: 12px;
+}
+.table_sorting_number button {
+  background-color: transparent;
+  border: 0;
+}
+.table_sorting_number button svg {
+  stroke-width: 1.5;
+  width: 20px;
+  height: 20px;
+  stroke: green;
+}
+
 .table > :not(caption) > * > * {
-  padding: 0.2rem 0.8rem !important;
+  padding: 0.3rem 0.8rem !important;
 }
 
 .table-responsive {
@@ -1725,6 +1749,13 @@ tr:hover td {
 table {
   margin-bottom: 0 !important;
 }
+table .form-check {
+  margin-bottom: 0px;
+  min-height: unset;
+}
+table .form-check-input {
+  margin-top: 0;
+}
 table thead {
   border-top: 1px solid #E3E3E3;
 }
@@ -1741,6 +1772,7 @@ table thead th .heading {
   display: inline-block;
   display: inline-flex;
   align-items: center;
+  min-height: 24px;
 }
 table thead th .heading img {
   width: 14px;
@@ -1786,7 +1818,7 @@ table tbody td {
   font-weight: 400;
   line-height: normal;
   color: #141314;
-  cursor: pointer;
+  min-height: 25px !important;
 }
 table tbody .status {
   font-size: 11px;
@@ -1813,12 +1845,13 @@ table tbody .action_td {
 }
 table tbody .action_btn {
   position: absolute;
-  top: -16px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   background-color: #ffffff;
   padding: 0 12px;
-  padding-right: 20px;
-  height: 31px;
+  padding-right: 12px;
+  height: 28px;
   display: none;
   z-index: 99;
 }
@@ -1829,13 +1862,14 @@ table tbody .action_btn a {
   margin-left: 5px;
 }
 table tbody .action_btn a::before {
-  height: 33px;
-  width: 33px;
+  height: 30px;
+  width: 30px;
   background-color: transparent;
   border-radius: 50%;
   position: absolute;
-  top: -7px;
-  left: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   content: "";
   z-index: -1;
 }
@@ -1843,7 +1877,7 @@ table tbody .action_btn .icon {
   width: 18px !important;
   height: 18px !important;
   color: #141314;
-  margin-left: 15px;
+  margin: 0 7px;
 }
 
 th.sl {
