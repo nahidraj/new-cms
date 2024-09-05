@@ -18,6 +18,20 @@ $(function () {
     $(this).remove();
   });
 
+  // Magnific popup js
+  $(".parent-container").magnificPopup({
+    delegate: "a",
+    type: "image",
+    // gallery: {
+    //   enabled: true,
+    // },
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: "ease-in-out", 
+    },
+  });
+
   // component loader js
   // $(".component_loader").fadeOut("slow", function () {
   //   $(this).remove();
@@ -79,18 +93,18 @@ $(function () {
   });
 
   // advance search js
-    // Toggle the show class on .advance_filter click
-    $(".advance_filter").on("click", function (event) {
-      event.stopPropagation(); // Prevent the click event from bubbling up to the document
-      $(".advance_search_result").toggleClass("show");
-    });
+  // Toggle the show class on .advance_filter click
+  $(".advance_filter").on("click", function (event) {
+    event.stopPropagation(); // Prevent the click event from bubbling up to the document
+    $(".advance_search_result").toggleClass("show");
+  });
 
-    // Remove the show class when clicking outside of .advance_search_result, .advance_filter, .search_box input, and .advance_search_btn
-    $(document).on("click", function (event) {
-      if (!$(event.target).closest('.advance_search_result, .advance_filter, .search_box input').length || $(event.target).is('.advance_search_btn')) {
-        $(".advance_search_result").removeClass("show");
-      }
-    });
+  // Remove the show class when clicking outside of .advance_search_result, .advance_filter, .search_box input, and .advance_search_btn
+  $(document).on("click", function (event) {
+    if (!$(event.target).closest('.advance_search_result, .advance_filter, .search_box input').length || $(event.target).is('.advance_search_btn')) {
+      $(".advance_search_result").removeClass("show");
+    }
+  });
 
   // sidebar collapsed menu js
   // Check the saved state in localStorage and apply it
