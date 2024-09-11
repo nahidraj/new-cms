@@ -12,6 +12,13 @@ $(function () {
       $("#header-fixed-height").addClass("active-height");
     }
   });
+  $(".table-basic").freezeTable({
+    'headWrapStyles': {
+      // 'box-shadow': '0px 9px 10px -5px rgba(159, 159, 160, 0.4)',
+      // 'border-bottom':'1px solid #E3E3E3',
+      'top': '62px' // Set the header's fixed position 120px from the top
+    }
+  });
 
   // full page loader js
   $(".fullpage_loader").fadeOut("slow", function () {
@@ -28,7 +35,7 @@ $(function () {
     zoom: {
       enabled: true,
       duration: 300,
-      easing: "ease-in-out", 
+      easing: "ease-in-out",
     },
   });
 

@@ -1884,13 +1884,6 @@ th.sl {
   max-width: 50px !important;
 }
 
-.base_table_list {
-  min-height: 550px;
-  max-height: 550px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-
 @media (max-width: 1799.98px) {
   .pagination_action .top_pagination .pagination p {
     font-size: 13px;
