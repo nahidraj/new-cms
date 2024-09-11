@@ -237,6 +237,16 @@ th.sl {
 //   overflow-y: auto;
 //   scrollbar-width: thin;
 // }
+.table-scroll-container {
+  overflow-x: auto; /* Adds horizontal scrollbar if needed */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.table {
+  width: 100%; /* Ensure the table takes the full width of its container */
+  min-width: 600px; /* Adjust as needed based on your content */
+  border-collapse: collapse; /* Optional: for better table appearance */
+}
 
 @media (max-width:1799.98px) {
   .pagination_action .top_pagination .pagination p {

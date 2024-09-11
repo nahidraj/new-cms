@@ -12,6 +12,7 @@ $(function () {
       $("#header-fixed-height").addClass("active-height");
     }
   });
+  
   $(".table-basic").freezeTable({
     'freezeColumn': false,
     'headWrapStyles': {
