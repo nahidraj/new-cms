@@ -1884,27 +1884,6 @@ th.sl {
   max-width: 50px !important;
 }
 
-.table-basic {
-  overflow-y: auto; /* Ensure vertical scrolling */
-  overflow-x: auto; /* Ensure horizontal scrolling */
-  scrollbar-width: thin; /* Firefox support for thin scrollbars */
-  scrollbar-color: #c0c0c0 transparent; /* Color of the scrollbar */
-}
-
-.table-basic::-webkit-scrollbar {
-  width: 6px; /* Width of the vertical scrollbar */
-  height: 6px; /* Height of the horizontal scrollbar */
-}
-
-.table-basic::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded scrollbar */
-}
-
-.table-basic::-webkit-scrollbar-track {
-  background: transparent; /* Transparent track */
-}
-
 @media (max-width: 1799.98px) {
   .pagination_action .top_pagination .pagination p {
     font-size: 13px;
