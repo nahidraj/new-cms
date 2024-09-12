@@ -77,20 +77,21 @@ body {
   }
 }
 
-.p_1{
+.p_1 {
   @include font(15px, 400);
   color: $black;
   line-height: 24px;
 }
 
-.help_btn{
+.help_btn {
   background-color: #178521;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   border: 0;
   color: $white;
-  .icon{
+
+  .icon {
     width: 22px;
     height: 22px;
   }
@@ -173,7 +174,7 @@ body {
   @include line_limit (10 !important);
 }
 
-// loaders
+// fullpage loader
 .fullpage_loader {
   position: fixed;
   top: 0;
@@ -187,60 +188,56 @@ body {
   align-items: center;
 
   .loader {
-    width: 35px;
+    width: 50px;
+    --b: 8px;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 3px solid #1A73E8;
-    animation:
-      l20-1 0.8s infinite linear alternate,
-      l20-2 1.6s infinite linear;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, $tertiary) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+      radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: l4 1s infinite steps(10);
   }
 
-  @keyframes l20-1 {
+  @keyframes l4 {
+    to {
+      transform: rotate(1turn)
+    }
+  }
+}
+
+// table loader New css
+.table_loader {
+  height: 80px;
+  margin: 0 auto;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    height: 4px;
+    width: 100px;
+    --c: no-repeat linear-gradient(#1A73E8 0 0);
+    background: var(--c), var(--c), #e0e0e0;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+
+  @keyframes l16 {
     0% {
-      clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+      background-position: -150% 0, -150% 0
     }
 
-    12.5% {
-      clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
-    }
-
-    25% {
-      clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
-    }
-
-    50% {
-      clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
-    }
-
-    62.5% {
-      clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
-    }
-
-    75% {
-      clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+    66% {
+      background-position: 250% 0, -150% 0
     }
 
     100% {
-      clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
-    }
-  }
-
-  @keyframes l20-2 {
-    0% {
-      transform: scaleY(1) rotate(0deg)
-    }
-
-    49.99% {
-      transform: scaleY(1) rotate(135deg)
-    }
-
-    50% {
-      transform: scaleY(-1) rotate(0deg)
-    }
-
-    100% {
-      transform: scaleY(-1) rotate(-135deg)
+      background-position: 250% 0, 250% 0
     }
   }
 }

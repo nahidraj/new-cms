@@ -12,7 +12,7 @@ $(function () {
       $("#header-fixed-height").addClass("active-height");
     }
   });
-  
+
   $(".table-basic").freezeTable({
     'freezeColumn': false,
     'scrollBar': true,
@@ -27,6 +27,11 @@ $(function () {
   $(".fullpage_loader").fadeOut("slow", function () {
     $(this).remove();
   });
+
+  // table loader js
+  // $(".table_loader").fadeOut("slow", function () {
+  //   $(this).remove();
+  // });
 
   // Magnific popup js
   $(".parent-container").magnificPopup({
