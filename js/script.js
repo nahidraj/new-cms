@@ -15,6 +15,7 @@ $(function () {
   
   $(".table-basic").freezeTable({
     'freezeColumn': false,
+    'scrollBar': true,
     'headWrapStyles': {
       // 'box-shadow': '0px 9px 10px -5px rgba(159, 159, 160, 0.4)',
       // 'border-bottom':'1px solid #E3E3E3',
